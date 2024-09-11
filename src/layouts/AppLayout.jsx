@@ -1,7 +1,7 @@
 import React from "react";
 import { Box, Fade } from "@mui/material";
 
-const AppLayout = ({ children, lg = '120px 200px', xl = '180px 410px' }) => {
+const AppLayout = ({ children, lg = '120px 200px', xl = '195px 410px' }) => {
   return (
     <Fade in={true} timeout={1000}>
       <Box
