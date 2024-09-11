@@ -28,12 +28,14 @@ const ProjectsPage = () => {
       title: 'Sample Title',
       description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
       withGithub: true,
+      image: '/SDOProject.png',
       techStack: genericTechStack
     },
     {
       title: 'Sample Title',
       description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
       withGithub: true,
+      image: '/SDOProject.png',
       techStack: genericTechStack
     },
     {
@@ -77,11 +79,11 @@ const ProjectsPage = () => {
       {
         projectList?.map((item, indexOut) => {
           return (
-            <Grid2 container spacing={2} mb={5} key={`project-key-${indexOut}`}>
+            <Grid2 container spacing={2} mb={5} key={`project-key-${indexOut}`} alignItems={'center'}>
               <Grid2 item size={{ xs: 12, md: 6 }}>
                 <img
                   src={item?.image}
-                  style={{ width: '100%', height: '100%', borderRadius: '10px', boxShadow: SHADOWS.light }}
+                  style={{ width: '100%', height: '100%' }}
                 />
               </Grid2>
               <Grid2 item size={{ xs: 12, md: 6 }}>
