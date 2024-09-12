@@ -75,7 +75,7 @@ const ProjectsPage = () => {
 
   return (
     <AppLayout xl={'50px 410px'} lg={'30px 200px'}>
-      <ResponsiveHeaderTypography mb={2}>PROJECTS</ResponsiveHeaderTypography>
+      <ResponsiveHeaderTypography mb={2} color={'primary'}>PROJECTS</ResponsiveHeaderTypography>
       {
         projectList?.map((item, indexOut) => {
           return (

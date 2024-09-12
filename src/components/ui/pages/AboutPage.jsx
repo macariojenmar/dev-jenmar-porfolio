@@ -61,7 +61,7 @@ const AboutPage = () => {
           </Box>
         </Grid2>
         <Grid2 item size={{ xs: 12, sm: 12, md: 6, lg: 6, xl: 6 }}>
-          <ResponsiveHeaderTypography>ABOUT ME</ResponsiveHeaderTypography>
+          <ResponsiveHeaderTypography color={'primary'}>ABOUT ME</ResponsiveHeaderTypography>
           <Typography mb={3} mt={1} variant="body2">
             I am Jenmar Sacyang Macario, a web developer based in Baguio City, Benguet, Philippines.
             My tech stack primarily includes React JS, Material-UI (MUI), and Laravel.

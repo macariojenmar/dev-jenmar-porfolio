@@ -5,7 +5,7 @@ export const light = createTheme({
   palette: {
     mode: LIGHT,
     primary: {
-      main: '#cb887e',
+      main: '#de724c',
     },
     secondary: {
       main: '#16a085',
@@ -18,6 +18,23 @@ export const light = createTheme({
     fontFamily: 'Poppins'
   },
   components: {
+    MuiCssBaseline: {
+      styleOverrides: {
+        body: {
+          '::-webkit-scrollbar': {
+            width: '5px',
+            height: '5px',
+          },
+          '::-webkit-scrollbar-thumb': {
+            backgroundColor: '#a6acaf',
+            borderRadius: '3px',
+          },
+          '::-webkit-scrollbar-thumb:hover': {
+            backgroundColor: '#555',
+          },
+        },
+      },
+    },
     ...SHARED_STYLED_COMPONENTS,
   }
 });

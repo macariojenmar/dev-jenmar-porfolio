@@ -22,7 +22,7 @@ const ContactPage = () => {
   return (
     <AppLayout xl={'280px 410px'} lg={'190px 200px'}>
       <Box padding={{ md: '0 240px' }}>
-        <ResponsiveHeaderTypography>CONTACT ME</ResponsiveHeaderTypography>
+        <ResponsiveHeaderTypography color={'primary'}>CONTACT ME</ResponsiveHeaderTypography>
         <Typography variant="body2" mb={3} mt={1}>
           If you are considering hiring me, feel free to reach out via the email provided below.
           Curious about what I bring to the table? Take a look at my projects or resume 😉
