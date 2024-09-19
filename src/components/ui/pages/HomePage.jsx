@@ -83,7 +83,7 @@ const HomePage = () => {
           </Stack>
         </Grid2>
         <Grid2 container item size={{ xs: 12, sm: 12, md: 6, lg: 6, xl: 6 }} justifyContent={{ xs: 'center', md: 'flex-end' }}>
-          <Box sx={{ width: { xs: '230px', md: '350px' }, height: { xs: '260px', md: '390px' } }}>
+          <Box sx={{ width: { xs: '230px', md: '345px' }, height: { xs: '260px', md: '390px' } }}>
             <img
               src={'/jenmarAvatar.png'}
               alt="My Avatar"

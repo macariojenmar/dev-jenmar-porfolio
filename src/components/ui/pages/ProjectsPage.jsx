@@ -1,7 +1,7 @@
 import React from "react";
 import AppLayout from "../../../layouts/AppLayout";
 import { ResponsiveHeaderTypography } from "../../generic/GenericTypography";
-import { Button, Chip, Grid2, Stack, Typography } from "@mui/material";
+import { Box, Button, Chip, Grid2, Stack, Typography } from "@mui/material";
 import { FaPlay } from "react-icons/fa6";
 import { FaGithub } from "react-icons/fa";
 import { ADOBE_XD_ICON, BOOTSTRAP_ICON, CSS_ICON, FIGMA_ICON, HTML_ICON, JS_ICON, LARAVEL_ICON, MUI_ICON, REACT_JS_ICON } from "../../generic/GenericIcons";
@@ -16,26 +16,17 @@ const ProjectsPage = () => {
     {
       icon: MUI_ICON,
       label: 'Material UI v6'
-    },
-    {
-      icon: FIGMA_ICON,
-      label: 'Figma'
     }
   ];
 
   const projectList = [
     {
-      title: 'Sample Title',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+      title: 'Craft & Comfort',
+      description: 'A fictional online shop specializing in handcrafted furniture, offering a unique collection that blends minimalist elegance, timeless class, and vintage charm. The website is designed to be fully responsive, providing an optimal user experience across all devices. With its clean, minimalist yet modern interface, the site reflects the brand\'s commitment to simplicity, functionality, and aesthetic appeal, making it easy for customers to explore the collection.',
       withGithub: true,
-      image: '/SDOProject.png',
-      techStack: genericTechStack
-    },
-    {
-      title: 'Sample Title',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
-      withGithub: true,
-      image: '/SDOProject.png',
+      image: '/SDOMockUp.png',
+      url: 'https://craft-and-comfort.web.app/',
+      code_url: 'https://github.com/macariojenmar/craft-and-comfort',
       techStack: genericTechStack
     },
     {
@@ -43,7 +34,7 @@ const ProjectsPage = () => {
       description: 'It serves as the official online portal for the Schools Division Office of Benguet, under the Department of Education (DepEd). It provides essential information and updates related to educational services, programs, and initiatives in the Benguet region. The site features resources for educators, students, and the general public, including announcements, downloadable forms, and contact information for the division\'s various offices. It was developed as part of my on-the-job training during college.',
       withGithub: false,
       url: 'https://sdo.depedbenguet.com/',
-      image: '/SDOProject.png',
+      image: '/SDOMockUp.png',
       techStack: [
         {
           icon: HTML_ICON,
@@ -64,10 +55,6 @@ const ProjectsPage = () => {
         {
           icon: LARAVEL_ICON,
           label: 'Laravel 8'
-        },
-        {
-          icon: ADOBE_XD_ICON,
-          label: 'Adobe Xd'
         }
       ]
     }
@@ -79,12 +66,14 @@ const ProjectsPage = () => {
       {
         projectList?.map((item, indexOut) => {
           return (
-            <Grid2 container spacing={2} mb={5} key={`project-key-${indexOut}`} alignItems={'center'}>
+            <Grid2 container spacing={5} mb={5} key={`project-key-${indexOut}`}>
               <Grid2 item size={{ xs: 12, md: 6 }}>
-                <img
-                  src={item?.image}
-                  style={{ width: '100%', height: '100%' }}
-                />
+                <Box sx={{ height: 360 }}>
+                  <img
+                    src={item?.image}
+                    style={{ width: '100%', height: '100%', borderRadius: '10px' }}
+                  />
+                </Box>
               </Grid2>
               <Grid2 item size={{ xs: 12, md: 6 }}>
                 <Typography variant="h6" mb={1} fontWeight={700}>{item?.title}</Typography>
@@ -103,7 +92,7 @@ const ProjectsPage = () => {
                   })
                 }
                 <Stack direction={'row'} justifyContent={'flex-end'} gap={1} mt={2}>
-                  {item?.withGithub && <Button startIcon={<FaGithub />}>Code</Button>}
+                  {item?.withGithub && <Button startIcon={<FaGithub />} onClick={() => window.open(item?.code_url, '_blank')}>Code</Button>}
                   <Button variant="outlined" startIcon={<FaPlay size={'14px'} />} onClick={() => window.open(item?.url, '_blank')}>Live Preview</Button>
                 </Stack>
               </Grid2>
