@@ -66,9 +66,9 @@ const ProjectsPage = () => {
       {
         projectList?.map((item, indexOut) => {
           return (
-            <Grid2 container spacing={5} mb={5} key={`project-key-${indexOut}`}>
+            <Grid2 container spacing={{ xs: 2, md: 5 }} mb={5} key={`project-key-${indexOut}`}>
               <Grid2 item size={{ xs: 12, md: 6 }}>
-                <Box sx={{ height: 360 }}>
+                <Box sx={{ height: { xs: 250, md: 360 } }}>
                   <img
                     src={item?.image}
                     style={{ width: '100%', height: '100%', borderRadius: '10px' }}
