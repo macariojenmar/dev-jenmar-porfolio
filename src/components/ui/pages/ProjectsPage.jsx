@@ -24,7 +24,7 @@ const ProjectsPage = () => {
       title: 'Craft & Comfort',
       description: 'A fictional online shop specializing in handcrafted furniture, offering a unique collection that blends minimalist elegance, timeless class, and vintage charm. The website is designed to be fully responsive, providing an optimal user experience across all devices. With its clean, minimalist yet modern interface, the site reflects the brand\'s commitment to simplicity, functionality, and aesthetic appeal, making it easy for customers to explore the collection.',
       withGithub: true,
-      image: '/SDOMockUp.png',
+      image: '/CraftAndComfortMockUp.png',
       url: 'https://craft-and-comfort.web.app/',
       code_url: 'https://github.com/macariojenmar/craft-and-comfort',
       techStack: genericTechStack
