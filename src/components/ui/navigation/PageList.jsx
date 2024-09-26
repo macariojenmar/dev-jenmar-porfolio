@@ -50,7 +50,7 @@ export const PageList = ({ isMobile = false }) => {
         alignItems={'center'}
         gap={1}
         ml={{ md: 3 }}
-        onClick={() => window.open('https://drive.google.com/file/d/1b14Sq6tw-TdZ2ut9O6K1neS8r7CPG7IN/view?usp=sharing', '_blank')}
+        onClick={() => window.open('https://drive.google.com/file/d/1bTX-i6m3iZ8xAJxAfU3REuo7zYZnYq3C/view?usp=sharing', '_blank')}
         sx={{ cursor: 'pointer' }}
       >
         <Typography variant="body2" fontWeight={600} color="secondary">Resume</Typography>

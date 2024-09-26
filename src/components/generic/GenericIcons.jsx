@@ -1,6 +1,6 @@
 import React from "react";
 import { BiLogoJavascript } from "react-icons/bi";
-import { FaBootstrap, FaCss3Alt, FaHtml5, FaLaravel } from "react-icons/fa6";
+import { FaBootstrap, FaCss3Alt, FaGithub, FaGitlab, FaHtml5, FaLaravel } from "react-icons/fa6";
 import { LiaGitAlt } from "react-icons/lia";
 import { LuFigma } from "react-icons/lu";
 import { RiReactjsLine } from "react-icons/ri";
@@ -18,3 +18,5 @@ export const FIGMA_ICON = <LuFigma color="#fc705f" />
 export const ADOBE_XD_ICON = <SiAdobexd color="#f360eb" />
 export const GIT_ICON = <LiaGitAlt color="#ed5036" />
 export const JS_ICON = <BiLogoJavascript color="#f0d81e" />
+export const GIT_HUB_ICON = <FaGithub />
+export const GIT_LAB_ICON = <FaGitlab color="#e2492e"/>

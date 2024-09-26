@@ -2,7 +2,7 @@ import React from "react";
 import { Box, Chip, Grid2, Typography } from "@mui/material";
 import { ResponsiveHeaderTypography } from "../../generic/GenericTypography";
 import AppLayout from "../../../layouts/AppLayout";
-import { ADOBE_XD_ICON, BOOTSTRAP_ICON, CSS_ICON, FIGMA_ICON, GIT_ICON, HTML_ICON, LARAVEL_ICON, MUI_ICON, MYSQL_ICON, REACT_JS_ICON } from "../../generic/GenericIcons";
+import { ADOBE_XD_ICON, BOOTSTRAP_ICON, CSS_ICON, FIGMA_ICON, GIT_HUB_ICON, GIT_LAB_ICON, HTML_ICON, LARAVEL_ICON, MUI_ICON, MYSQL_ICON, REACT_JS_ICON } from "../../generic/GenericIcons";
 
 const technicalSkills = [
   {
@@ -42,8 +42,12 @@ const technicalSkills = [
     label: 'Adobe Xd'
   },
   {
-    icon: GIT_ICON,
-    label: 'Git'
+    icon: GIT_HUB_ICON,
+    label: 'GitHub'
+  },
+  {
+    icon: GIT_LAB_ICON,
+    label: 'GitLab'
   }
 ];
 
