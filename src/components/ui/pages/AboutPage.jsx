@@ -60,7 +60,7 @@ const AboutPage = () => {
     <AppLayout>
       <Grid2 container alignItems={'center'} spacing={2}>
         <Grid2 container item size={{ xs: 12, sm: 12, md: 6, lg: 6, xl: 6 }} justifyContent={{ xs: 'center', md: 'flex-start' }}>
-          <Box sx={{ width: { xs: '253px', md: '420px' }, height: { xs: '240px', md: '390px' } }}>
+          <Box sx={{ width: { xs: '233px', md: '420px' }, height: { xs: '215px', md: '390px' } }}>
             <img
               src={'/aboutImage.png'}
               alt="About Image"
