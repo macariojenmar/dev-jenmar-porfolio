@@ -4,8 +4,7 @@ import { ResponsiveHeaderTypography } from "../../generic/GenericTypography";
 import { Box, Button, Chip, Grid2, Stack, Typography } from "@mui/material";
 import { FaPlay } from "react-icons/fa6";
 import { FaGithub } from "react-icons/fa";
-import { ADOBE_XD_ICON, BOOTSTRAP_ICON, CSS_ICON, FIGMA_ICON, HTML_ICON, JS_ICON, LARAVEL_ICON, MUI_ICON, REACT_JS_ICON } from "../../generic/GenericIcons";
-import { SHADOWS } from "../../../enums/themeEnums";
+import { BOOTSTRAP_ICON, CSS_ICON, HEADLESS_UI_ICON, HTML_ICON, JS_ICON, LARAVEL_ICON, MUI_ICON, REACT_JS_ICON, TAILWIND_ICON } from "../../generic/GenericIcons";
 
 const ProjectsPage = () => {
   const genericTechStack = [
@@ -21,13 +20,38 @@ const ProjectsPage = () => {
 
   const projectList = [
     {
+      title: 'Custom Threads',
+      description: 'A fictional website created to showcase customizable t-shirts. It offers users the ability to design their own t-shirts by choosing from a wide range of illustrations, shirt types, and personal touches. The website demonstrates how a platform can empower individuals to express their style through high-quality, personalized apparel. Fully responsive, ensures a seamless and enjoyable customization experience across all devices, highlighting the potential of a custom clothing e-commerce store.',
+      withGithub: true,
+      image: '/CustomThreadsMockup.png',
+      url: 'https://shop-custom-threads.web.app/',
+      code_url: 'https://github.com/macariojenmar/custom-threads',
+      techStack: [
+        {
+          icon: REACT_JS_ICON,
+          label: 'React JS'
+        },
+        {
+          icon: TAILWIND_ICON,
+          label: 'Tailwind CSS'
+        },
+        {
+          icon: HEADLESS_UI_ICON,
+          label: 'HeadlessUI'
+        },
+      ],
+      date: 'Ongoing'
+    },
+    {
       title: 'Craft & Comfort',
       description: 'A fictional online shop specializing in handcrafted furniture, offering a unique collection that blends minimalist elegance, timeless class, and vintage charm. The website is designed to be fully responsive, providing an optimal user experience across all devices. With its clean, minimalist yet modern interface, the site reflects the brand\'s commitment to simplicity, functionality, and aesthetic appeal, making it easy for customers to explore the collection.',
       withGithub: true,
       image: '/CraftAndComfortMockUp.png',
       url: 'https://craft-and-comfort.web.app/',
       code_url: 'https://github.com/macariojenmar/craft-and-comfort',
-      techStack: genericTechStack
+      techStack: genericTechStack,
+      npm_packages: "zustand, react-router-dom, and react-hot-toast",
+      date: 'September 2024'
     },
     {
       title: 'Schools Division of Benguet Website',
@@ -35,6 +59,7 @@ const ProjectsPage = () => {
       withGithub: false,
       url: 'https://sdo.depedbenguet.com/',
       image: '/SDOMockUp.png',
+      date: 'August 2022',
       techStack: [
         {
           icon: HTML_ICON,
@@ -76,8 +101,10 @@ const ProjectsPage = () => {
                 </Box>
               </Grid2>
               <Grid2 item size={{ xs: 12, md: 6 }}>
-                <Typography variant="h6" mb={1} fontWeight={700}>{item?.title}</Typography>
-                <Typography variant="body2" mb={2}>{item?.description}</Typography>
+                <Typography variant="h6" fontWeight={700}>{item?.title}</Typography>
+                <Typography variant="caption" color="grey">{item?.date}</Typography>
+                <Typography variant="body2" mb={item?.npm_packages ? 1 : 2} mt={1}>{item?.description}</Typography>
+                {item?.npm_packages && <Typography variant="body2" color="grey" mb={2}>Other npm packages: {item?.npm_packages}</Typography>}
                 <Typography variant="body2" fontWeight={700} mb={1}>Made using:</Typography>
                 {
                   item?.techStack?.map((tech, indexIn) => {
@@ -92,7 +119,7 @@ const ProjectsPage = () => {
                   })
                 }
                 <Stack direction={'row'} justifyContent={'flex-end'} gap={1} mt={2}>
-                  {item?.withGithub && <Button startIcon={<FaGithub />} onClick={() => window.open(item?.code_url, '_blank')}>Code</Button>}
+                  {item?.withGithub && <Button startIcon={<FaGithub />} onClick={() => window.open(item?.code_url, '_blank')} color="none">Code</Button>}
                   <Button variant="outlined" startIcon={<FaPlay size={'14px'} />} onClick={() => window.open(item?.url, '_blank')}>Live Preview</Button>
                 </Stack>
               </Grid2>

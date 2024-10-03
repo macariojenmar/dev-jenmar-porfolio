@@ -3,8 +3,8 @@ import { BiLogoJavascript } from "react-icons/bi";
 import { FaBootstrap, FaCss3Alt, FaGithub, FaGitlab, FaHtml5, FaLaravel } from "react-icons/fa6";
 import { LiaGitAlt } from "react-icons/lia";
 import { LuFigma } from "react-icons/lu";
-import { RiReactjsLine } from "react-icons/ri";
-import { SiAdobexd, SiFirebase, SiMui } from "react-icons/si";
+import { RiReactjsLine, RiTailwindCssFill } from "react-icons/ri";
+import { SiAdobexd, SiFirebase, SiHeadlessui, SiMui } from "react-icons/si";
 import { TbBrandMysql } from "react-icons/tb";
 
 export const REACT_JS_ICON = <RiReactjsLine color="#64bddf" />
@@ -20,4 +20,8 @@ export const GIT_ICON = <LiaGitAlt color="#ed5036" />
 export const JS_ICON = <BiLogoJavascript color="#f0d81e" />
 export const GIT_HUB_ICON = <FaGithub />
 export const GIT_LAB_ICON = <FaGitlab color="#e2492e" />
-export const FIREBASE_ICON = <SiFirebase color="#ffc709"/>
+export const FIREBASE_ICON = <SiFirebase color="#ffc709" />
+export const TAILWIND_ICON = <RiTailwindCssFill color="#35bceb" />
+export const HEADLESS_UI_ICON = <SiHeadlessui color="#7ecffa"/>
+
+

@@ -2,7 +2,7 @@ import React from "react";
 import { Box, Chip, Grid2, Typography } from "@mui/material";
 import { ResponsiveHeaderTypography } from "../../generic/GenericTypography";
 import AppLayout from "../../../layouts/AppLayout";
-import { ADOBE_XD_ICON, BOOTSTRAP_ICON, CSS_ICON, FIGMA_ICON, FIREBASE_ICON, GIT_HUB_ICON, GIT_LAB_ICON, HTML_ICON, LARAVEL_ICON, MUI_ICON, MYSQL_ICON, REACT_JS_ICON } from "../../generic/GenericIcons";
+import { ADOBE_XD_ICON, BOOTSTRAP_ICON, CSS_ICON, FIGMA_ICON, FIREBASE_ICON, GIT_HUB_ICON, GIT_LAB_ICON, HEADLESS_UI_ICON, HTML_ICON, LARAVEL_ICON, MUI_ICON, MYSQL_ICON, REACT_JS_ICON, TAILWIND_ICON } from "../../generic/GenericIcons";
 
 const technicalSkills = [
   {
@@ -14,12 +14,12 @@ const technicalSkills = [
     label: 'Material UI'
   },
   {
-    icon: LARAVEL_ICON,
-    label: 'Laravel'
+    icon: TAILWIND_ICON,
+    label: 'Tailwind CSS'
   },
   {
-    icon: MYSQL_ICON,
-    label: 'MySQL'
+    icon: HEADLESS_UI_ICON,
+    label: 'HeadlessUI'
   },
   {
     icon: HTML_ICON,
@@ -32,6 +32,14 @@ const technicalSkills = [
   {
     icon: BOOTSTRAP_ICON,
     label: 'Bootstrap'
+  },
+  {
+    icon: LARAVEL_ICON,
+    label: 'Laravel'
+  },
+  {
+    icon: MYSQL_ICON,
+    label: 'MySQL'
   },
   {
     icon: FIGMA_ICON,
